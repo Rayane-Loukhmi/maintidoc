@@ -1,0 +1,39 @@
+[project]
+name = "maintidoc"
+version = "0.1.0"
+description = "Assistant documentaire multimodal et agentique MaintiDoc (SAN fictif)"
+readme = "README.md"
+authors = [
+    { name = "Rayane-Loukhmi", email = "loukhmi.rayane03@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "jupyter>=1.1.1",
+    "langgraph>=1.2.24",
+    "matplotlib>=3.11.2",
+    "mcp>=2.3.0",
+    "nbconvert>=7.17.2",
+    "ollama>=0.6.3",
+    "pandas>=3.1.1",
+    "pillow>=13.0.0",
+    "pymupdf>=2.1",
+    "qdrant-client>=1.20.0",
+    "rapidocr-onnxruntime>=1.4.4",
+    "scikit-learn>=1.9.1",
+    "sentence-transformers>=6.3.0",
+    "streamlit>=1.67.0",
+]
+
+[project.scripts]
+maintidoc = "maintidoc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+

@@ -1,0 +1,15 @@
+id,question,expected_pages,text_pages_top5,rrf_pages,expected_figures,figures_top3,recall_text@5,recall_rrf,recall_image@3,mrr_page
+Q01,Quel est le role des deux fabrics ?,"[2, 3]","[7, 7, 3, 2, 2]","[3, 2, 7, 4]","['FIG-01', 'FIG-02']","['FIG-02', 'FIG-01', 'FIG-03']",1.0,1.0,1.0,0.333
+Q02,Ou intervient le zoning ?,[3],"[7, 2, 3, 6, 7]","[3, 2, 6, 7]",['FIG-02'],"['FIG-02', 'FIG-01', 'FIG-03']",1.0,1.0,1.0,0.333
+Q03,Que signifie MPIO ?,[3],"[7, 3, 7, 3, 2]","[3, 4, 2, 7]",[],"['FIG-02', 'FIG-03', 'FIG-04']",1.0,1.0,0.0,0.5
+Q04,Le disque B03 a-t-il un antecedent ?,"[4, 7]","[4, 7, 9, 4, 7]","[4, 3, 7, 6]",['FIG-03'],"['FIG-02', 'FIG-05', 'FIG-03']",1.0,1.0,1.0,1.0
+Q05,Quel est le sens de AL-01 ?,[5],"[5, 7, 7, 7, 5]","[5, 3, 7, 2]",['FIG-04'],"['FIG-02', 'FIG-04', 'FIG-01']",1.0,1.0,1.0,1.0
+Q06,Le voyant orange permet-il un diagnostic certain ?,[5],"[5, 5, 7, 4, 5]","[5, 4, 3, 7]",['FIG-04'],"['FIG-02', 'FIG-04', 'FIG-01']",1.0,1.0,1.0,1.0
+Q07,Que faut-il verifier avant un ticket ?,"[6, 7]","[7, 6, 4, 6, 7]","[6, 4, 7, 3]",['FIG-05'],"['FIG-05', 'FIG-02', 'FIG-01']",1.0,1.0,1.0,1.0
+Q08,Qui doit approuver la creation du ticket ?,[6],"[6, 6, 7, 4, 7]","[6, 4, 3, 7]",['FIG-05'],"['FIG-05', 'FIG-02', 'FIG-01']",1.0,1.0,1.0,1.0
+Q09,Quelle procedure correspond a une perte de chemin ?,[3],"[7, 3, 7, 6, 9]","[3, 6, 7, 2]",['FIG-02'],"['FIG-02', 'FIG-01', 'FIG-05']",1.0,1.0,1.0,0.5
+Q10,Peut-on declencher un failover depuis MaintiDoc ?,[6],"[7, 6, 6, 1, 7]","[6, 7, 2, 3]",['FIG-05'],"['FIG-05', 'FIG-01', 'FIG-02']",1.0,1.0,1.0,0.5
+Q11,Quelle alerte touche la capacite ?,[5],"[4, 7, 4, 4, 7]","[4, 5, 3, 7]",['FIG-04'],"['FIG-02', 'FIG-05', 'FIG-04']",0.0,1.0,1.0,0.167
+Q12,Quels elements retrouve-t-on dans le ticket exemple ?,[7],"[7, 7, 7, 4, 6]","[6, 4, 7, 2]",[],"['FIG-05', 'FIG-03', 'FIG-01']",1.0,1.0,0.0,1.0
+Q13,Quel est le prix de la baie SAN-LAB 2000 ?,[],"[2, 2, 7, 6, 1]","[2, 6, 5, 4]",[],"['FIG-01', 'FIG-03', 'FIG-02']",0.0,0.0,0.0,0.0
+Q14,Quel niveau RAID exact est utilise ?,[2],"[2, 4, 4, 5, 4]","[4, 2, 5, 3]",[],"['FIG-03', 'FIG-02', 'FIG-04']",1.0,1.0,0.0,1.0

@@ -1,0 +1,72 @@
+[
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 2,
+    "element_id": "P02-IMG01",
+    "figure_id": "FIG-01",
+    "type": "image",
+    "kind": "figure",
+    "path": "data\\processed\\images\\fig01_page02.png",
+    "filename": "fig01_page02.png",
+    "width": 1300,
+    "height": 570,
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 3,
+    "element_id": "P03-IMG01",
+    "figure_id": "FIG-02",
+    "type": "image",
+    "kind": "figure",
+    "path": "data\\processed\\images\\fig02_page03.png",
+    "filename": "fig02_page03.png",
+    "width": 1300,
+    "height": 570,
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 4,
+    "element_id": "P04-IMG01",
+    "figure_id": "FIG-03",
+    "type": "image",
+    "kind": "figure",
+    "path": "data\\processed\\images\\fig03_page04.png",
+    "filename": "fig03_page04.png",
+    "width": 1300,
+    "height": 570,
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 5,
+    "element_id": "P05-IMG01",
+    "figure_id": "FIG-04",
+    "type": "image",
+    "kind": "figure",
+    "path": "data\\processed\\images\\fig04_page05.png",
+    "filename": "fig04_page05.png",
+    "width": 1300,
+    "height": 570,
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 6,
+    "element_id": "P06-IMG01",
+    "figure_id": "FIG-05",
+    "type": "image",
+    "kind": "figure",
+    "path": "data\\processed\\images\\fig05_page06.png",
+    "filename": "fig05_page06.png",
+    "width": 1300,
+    "height": 570,
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  }
+]

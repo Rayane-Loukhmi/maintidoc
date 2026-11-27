@@ -1,0 +1,408 @@
+[
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 2,
+    "element_id": "P02-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Champ",
+        "Valeur pedagogique"
+      ],
+      [
+        "Equipement",
+        "SAN-LAB 2000 (fictif)"
+      ],
+      [
+        "Controleurs",
+        "A et B, haute disponibilite conceptuelle"
+      ],
+      [
+        "Connectivite",
+        "2 fabrics FC A/B; zoning et LUN masking"
+      ],
+      [
+        "Protection donnees",
+        "Groupe de disques protege; details RAID non specifies"
+      ],
+      [
+        "Supervision",
+        "Etat controleurs, disques, ports, chemins et capacite"
+      ],
+      [
+        "Exclusions",
+        "Aucune instruction de remplacement a chaud ni modification de zoning en production"
+      ]
+    ],
+    "text": "| Champ | Valeur pedagogique |\n|---|---|\n| Equipement | SAN-LAB 2000 (fictif) |\n| Controleurs | A et B, haute disponibilite conceptuelle |\n| Connectivite | 2 fabrics FC A/B; zoning et LUN masking |\n| Protection donnees | Groupe de disques protege; details RAID non specifies |\n| Supervision | Etat controleurs, disques, ports, chemins et capacite |\n| Exclusions | Aucune instruction de remplacement a chaud ni modification de zoning en production |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 3,
+    "element_id": "P03-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Terme",
+        "Definition / verification"
+      ],
+      [
+        "HBA",
+        "Carte de connexion FC cote hote; etat du port et WWPN"
+      ],
+      [
+        "WWPN",
+        "Identifiant de port Fibre Channel; correspondance inventaire"
+      ],
+      [
+        "Zoning",
+        "Regles de visibilite des ports dans une fabric"
+      ],
+      [
+        "LUN masking",
+        "Autorisation d’acces aux volumes par les initiateurs"
+      ],
+      [
+        "MPIO",
+        "Gestion des chemins multiples et basculement selon configuration"
+      ]
+    ],
+    "text": "| Terme | Definition / verification |\n|---|---|\n| HBA | Carte de connexion FC cote hote; etat du port et WWPN |\n| WWPN | Identifiant de port Fibre Channel; correspondance inventaire |\n| Zoning | Regles de visibilite des ports dans une fabric |\n| LUN masking | Autorisation d’acces aux volumes par les initiateurs |\n| MPIO | Gestion des chemins multiples et basculement selon configuration |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 4,
+    "element_id": "P04-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Element",
+        "Symptome possible",
+        "Verification documentaire"
+      ],
+      [
+        "Controleur A/B",
+        "Degrade ou indisponible",
+        "Statut, journaux, etat HA"
+      ],
+      [
+        "Enceinte",
+        "Perte de liaison",
+        "Inventaire et alertes de connexion"
+      ],
+      [
+        "Disque Bxx",
+        "Defaut ou pre-alerte",
+        "ID exact, groupe, reconstruction"
+      ],
+      [
+        "Volume LUN",
+        "Saturation / latence",
+        "Capacite, IOPS, latence, alertes"
+      ]
+    ],
+    "text": "| Element | Symptome possible | Verification documentaire |\n|---|---|---|\n| Controleur A/B | Degrade ou indisponible | Statut, journaux, etat HA |\n| Enceinte | Perte de liaison | Inventaire et alertes de connexion |\n| Disque Bxx | Defaut ou pre-alerte | ID exact, groupe, reconstruction |\n| Volume LUN | Saturation / latence | Capacite, IOPS, latence, alertes |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 5,
+    "element_id": "P05-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Code",
+        "Etat",
+        "Signification pour le simulateur",
+        "Reponse documentaire"
+      ],
+      [
+        "AL-01",
+        "Orange",
+        "Chemin FC degrade",
+        "Verifier DIAG-FC-01 et FIG-02"
+      ],
+      [
+        "AL-02",
+        "Orange",
+        "Disque en pre-alerte",
+        "Consulter FIG-03 et DISC-02"
+      ],
+      [
+        "AL-03",
+        "Rouge",
+        "Volume indisponible",
+        "Escalade prioritaire au responsable SAN"
+      ],
+      [
+        "AL-04",
+        "Orange",
+        "Capacite libre faible",
+        "Consulter tendances et politique capacite"
+      ],
+      [
+        "AL-00",
+        "Vert",
+        "Etat nominal declare",
+        "Aucune action preventive imposee"
+      ]
+    ],
+    "text": "| Code | Etat | Signification pour le simulateur | Reponse documentaire |\n|---|---|---|---|\n| AL-01 | Orange | Chemin FC degrade | Verifier DIAG-FC-01 et FIG-02 |\n| AL-02 | Orange | Disque en pre-alerte | Consulter FIG-03 et DISC-02 |\n| AL-03 | Rouge | Volume indisponible | Escalade prioritaire au responsable SAN |\n| AL-04 | Orange | Capacite libre faible | Consulter tendances et politique capacite |\n| AL-00 | Vert | Etat nominal declare | Aucune action preventive imposee |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 6,
+    "element_id": "P06-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Operation",
+        "Autorisation dans MaintiDoc"
+      ],
+      [
+        "Lire documentation et journaux autorises",
+        "Oui, avec controle d’acces"
+      ],
+      [
+        "Preparer un ticket",
+        "Oui, sous forme de brouillon"
+      ],
+      [
+        "Creer un ticket",
+        "Seulement apres approbation humaine"
+      ],
+      [
+        "Modifier zoning / supprimer LUN / failover",
+        "Non: hors perimetre"
+      ]
+    ],
+    "text": "| Operation | Autorisation dans MaintiDoc |\n|---|---|\n| Lire documentation et journaux autorises | Oui, avec controle d’acces |\n| Preparer un ticket | Oui, sous forme de brouillon |\n| Creer un ticket | Seulement apres approbation humaine |\n| Modifier zoning / supprimer LUN / failover | Non: hors perimetre |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 7,
+    "element_id": "P07-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Ticket",
+        "Date",
+        "Actif",
+        "Observation / suite"
+      ],
+      [
+        "INC-104",
+        "2026-09-18",
+        "Fabric A",
+        "Perte temporaire de chemin HBA1; surveillance"
+      ],
+      [
+        "INC-117",
+        "2026-10-02",
+        "Disque B03",
+        "Pre-alerte; examen du groupe de protection"
+      ],
+      [
+        "INC-125",
+        "2026-10-20",
+        "Volume VOL-DB",
+        "Capacite a 88 %; analyse de tendance"
+      ],
+      [
+        "INC-130",
+        "2026-10-25",
+        "Controleur B",
+        "Evenement non reproductible; suivi"
+      ]
+    ],
+    "text": "| Ticket | Date | Actif | Observation / suite |\n|---|---|---|---|\n| INC-104 | 2026-09-18 | Fabric A | Perte temporaire de chemin HBA1; surveillance |\n| INC-117 | 2026-10-02 | Disque B03 | Pre-alerte; examen du groupe de protection |\n| INC-125 | 2026-10-20 | Volume VOL-DB | Capacite a 88 %; analyse de tendance |\n| INC-130 | 2026-10-25 | Controleur B | Evenement non reproductible; suivi |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 7,
+    "element_id": "P07-TAB02",
+    "type": "table",
+    "rows": [
+      [
+        "ID",
+        "Question",
+        "Source attendue"
+      ],
+      [
+        "Q01",
+        "Quel est le role des deux fabrics ?",
+        "FIG-01, FIG-02"
+      ],
+      [
+        "Q02",
+        "Ou intervient le zoning ?",
+        "FIG-02"
+      ],
+      [
+        "Q03",
+        "Que signifie MPIO ?",
+        "Section 2"
+      ],
+      [
+        "Q04",
+        "Le disque B03 a-t-il un antecedent ?",
+        "INC-117, FIG-03"
+      ],
+      [
+        "Q05",
+        "Quel est le sens de AL-01 ?",
+        "ALARM-TAB-01"
+      ],
+      [
+        "Q06",
+        "Le voyant orange permet-il un diagnostic certain ?",
+        "Section 4"
+      ],
+      [
+        "Q07",
+        "Que faut-il verifier avant un ticket ?",
+        "PROC-SAN-01"
+      ],
+      [
+        "Q08",
+        "Qui doit approuver la creation du ticket ?",
+        "Section 5"
+      ],
+      [
+        "Q09",
+        "Quelle procedure correspond a une perte de chemin ?",
+        "DIAG-FC-01"
+      ],
+      [
+        "Q10",
+        "Peut-on declencher un failover depuis MaintiDoc ?",
+        "Section 5"
+      ],
+      [
+        "Q11",
+        "Quelle alerte touche la capacite ?",
+        "AL-04"
+      ],
+      [
+        "Q12",
+        "Quels elements retrouve-t-on dans le ticket exemple ?",
+        "Section 6"
+      ]
+    ],
+    "text": "| ID | Question | Source attendue |\n|---|---|---|\n| Q01 | Quel est le role des deux fabrics ? | FIG-01, FIG-02 |\n| Q02 | Ou intervient le zoning ? | FIG-02 |\n| Q03 | Que signifie MPIO ? | Section 2 |\n| Q04 | Le disque B03 a-t-il un antecedent ? | INC-117, FIG-03 |\n| Q05 | Quel est le sens de AL-01 ? | ALARM-TAB-01 |\n| Q06 | Le voyant orange permet-il un diagnostic certain ? | Section 4 |\n| Q07 | Que faut-il verifier avant un ticket ? | PROC-SAN-01 |\n| Q08 | Qui doit approuver la creation du ticket ? | Section 5 |\n| Q09 | Quelle procedure correspond a une perte de chemin ? | DIAG-FC-01 |\n| Q10 | Peut-on declencher un failover depuis MaintiDoc ? | Section 5 |\n| Q11 | Quelle alerte touche la capacite ? | AL-04 |\n| Q12 | Quels elements retrouve-t-on dans le ticket exemple ? | Section 6 |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 7,
+    "element_id": "P07-TAB03",
+    "type": "table",
+    "rows": [
+      [
+        "Champ",
+        "Exemple"
+      ],
+      [
+        "Equipment ID",
+        "SAN-LAB-2000"
+      ],
+      [
+        "Titre",
+        "Alerte AL-01 sur fabric A"
+      ],
+      [
+        "Description",
+        "Chemin FC degrade sur HBA1, recurrence a verifier"
+      ],
+      [
+        "Preuves",
+        "ALARM-TAB-01, FIG-02, INC-104"
+      ],
+      [
+        "Statut",
+        "Brouillon - approbation requise"
+      ]
+    ],
+    "text": "| Champ | Exemple |\n|---|---|\n| Equipment ID | SAN-LAB-2000 |\n| Titre | Alerte AL-01 sur fabric A |\n| Description | Chemin FC degrade sur HBA1, recurrence a verifier |\n| Preuves | ALARM-TAB-01, FIG-02, INC-104 |\n| Statut | Brouillon - approbation requise |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  },
+  {
+    "document_id": "SAN-MAN-001",
+    "revision": "1.1",
+    "page": 9,
+    "element_id": "P09-TAB01",
+    "type": "table",
+    "rows": [
+      [
+        "Reference",
+        "Type",
+        "Contenu"
+      ],
+      [
+        "FIG-01",
+        "Schema",
+        "Architecture logique"
+      ],
+      [
+        "FIG-02",
+        "Schema",
+        "Fibre Channel et MPIO"
+      ],
+      [
+        "FIG-03",
+        "Schema",
+        "Controleurs et disques"
+      ],
+      [
+        "FIG-04",
+        "Schema",
+        "Voyants du simulateur"
+      ],
+      [
+        "FIG-05",
+        "Schema",
+        "Workflow maintenance"
+      ],
+      [
+        "ALARM-TAB-01",
+        "Tableau",
+        "Codes d alarmes"
+      ],
+      [
+        "DIAG-FC-01",
+        "Procedure",
+        "Perte de chemin FC"
+      ],
+      [
+        "DISC-02",
+        "Procedure",
+        "Pre-alerte disque"
+      ],
+      [
+        "PROC-SAN-01",
+        "Procedure",
+        "Gestion documentaire d alerte"
+      ],
+      [
+        "INC-104 a INC-130",
+        "Historique",
+        "Interventions fictives"
+      ]
+    ],
+    "text": "| Reference | Type | Contenu |\n|---|---|---|\n| FIG-01 | Schema | Architecture logique |\n| FIG-02 | Schema | Fibre Channel et MPIO |\n| FIG-03 | Schema | Controleurs et disques |\n| FIG-04 | Schema | Voyants du simulateur |\n| FIG-05 | Schema | Workflow maintenance |\n| ALARM-TAB-01 | Tableau | Codes d alarmes |\n| DIAG-FC-01 | Procedure | Perte de chemin FC |\n| DISC-02 | Procedure | Pre-alerte disque |\n| PROC-SAN-01 | Procedure | Gestion documentaire d alerte |\n| INC-104 a INC-130 | Historique | Interventions fictives |",
+    "sha256": "caec09fa5cadf68924ac1c75194498aaa9329d8c5e5cf1071939b3b50002b3f9"
+  }
+]
